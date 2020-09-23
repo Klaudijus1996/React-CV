@@ -8,7 +8,6 @@ import {
 import './output.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-// import Home from './Views/Home';
 import Heading from './Views/Heading';
 import Skills from './Views/Skills';
 import About from './Views/About';
