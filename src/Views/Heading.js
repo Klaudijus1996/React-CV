@@ -15,10 +15,11 @@ const Heading = () => {
             <h1
                 className="text-6xl w-full text-center"
                 style={{
-                    height: 'fit-content'
+                    height: 'fit-content',
+                    fontFamily: "'Righteous', cursive"
                 }}
             >Hello</h1>
-            <div className="cd-intro w-full">
+            <div style={{ fontFamily: "'Frank Ruhl Libre', serif" }} className="cd-intro w-full">
                 <h1 className="text-center cd-headline clip text-5xl">
                     <span className="blc">I am &nbsp;</span>
                     <span className="cd-words-wrapper">

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,7 +9,8 @@ import './output.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 // import Home from './Views/Home';
-import Heading from './Views/Heading'
+import Heading from './Views/Heading';
+import Skills from './Views/Skills';
 import About from './Views/About';
 import Contact from './Views/Contact'
 
@@ -28,6 +28,7 @@ function App() {
             <Route exact path="/">
               <Heading />
               <About />
+              <Skills />
               <Contact />
             </Route>
             <Route path="/about">
