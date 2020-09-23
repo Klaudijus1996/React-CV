@@ -13,9 +13,6 @@ import Skills from './Views/Skills';
 import About from './Views/About';
 import Contact from './Views/Contact'
 
-
-// import Header from './Components/Header';
-
 function App() {
   return (
     <>
