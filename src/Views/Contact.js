@@ -1,36 +1,40 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faEnvelope, faMapMarkedAlt, faMobile, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faEnvelope, faMapMarked, faMapMarkedAlt, faMapMarker, faMapMarkerAlt, faMobile, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
     return (
         <section className="bg-blue-100 p-5">
             <h1 style={{ fontFamily: "'Righteous', cursive" }} className="text-5xl text-center p-5">Contact</h1>
             <div className="container flex justify-between p-10">
-                <div className="w-2/5 bg-gray-200">
-                    <ul>
+                <div className="w-2/5 bg-white bg-opacity-50">
+                    <ul className="w-4/5 mr-auto ml-auto">
                         <li className="py-4 flex items-center">
-                            <h4 className="inline-block text-center text-red-500 rounded-full w-20 h-20 leading-2 bg-gray-300 text-5xl hover:bg-gray-400 hover:text-red-700">
+                            <h4 className="inline-block text-center text-red-400 rounded-full w-20 h-20 leading-2 bg-white text-5xl hover:bg-gray-100 hover:text-red-500">
                                 <FontAwesomeIcon icon={faEnvelope} />
-                            </h4><p className="leading-3 text-lg inline-block">&nbsp; <FontAwesomeIcon icon={faArrowRight} /> ###########</p>
+                            </h4><p className="leading-3 text-lg inline-block">&nbsp; <FontAwesomeIcon icon={faArrowRight} /> klaudijus.k1996@gmail.com</p>
                         </li>
                         <li className="py-4 flex items-center">
-                            <h4 className="inline-block text-center text-red-500 rounded-full w-20 h-20 leading-2 bg-gray-300 text-5xl hover:bg-gray-400">
+                            <h4 className="inline-block text-center text-gray-700 rounded-full w-20 h-20 leading-2 bg-white text-5xl hover:bg-gray-100 hover:text-gray-800">
                                 <FontAwesomeIcon icon={faMobileAlt} />
-                            </h4><p className="leading-3 text-lg inline-block">&nbsp; <FontAwesomeIcon icon={faArrowRight} /> ###########</p>
+                            </h4><p className="leading-3 text-lg inline-block">&nbsp; <FontAwesomeIcon icon={faArrowRight} /> +37067035988</p>
                         </li>
                         <li className="py-4 flex items-center">
-                            <h4 className="inline-block text-center text-red-500 rounded-full w-20 h-20 leading-2 bg-gray-300 text-5xl hover:bg-gray-400 hover:text-red-700">
-                                <FontAwesomeIcon icon={faMapMarkedAlt} />
-                            </h4><p className="leading-3 text-lg inline-block">&nbsp; <FontAwesomeIcon icon={faArrowRight} /> ###########</p>
+                            <h4 className="inline-block text-center rounded-full w-20 h-20 leading-2 text-red-300 text-5xl bg-white hover:bg-gray-100 hover:text-red-500">
+                                <FontAwesomeIcon icon={faMapMarkerAlt} />
+                            </h4><p className="leading-3 text-lg inline-block">&nbsp; <FontAwesomeIcon icon={faArrowRight} /> Partizanų g, Kaunas, Lithuania</p>
                         </li>
                     </ul>
                 </div>
-                <div className="w-2/5 bg-gray-300">
-                    <textarea style={{ resize: "none" }} className="w-full h-full hover:bg-gray-100 border" name="" id=""></textarea>
-                    <button class="float-right bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
-                        Send
+                <div className="w-2/5 bg-gray-300 shadow-lg">
+
+                    <textarea style={{ resize: "none" }} className="w-full h-full hover:bg-gray-100 border focus:outline-none p-2" placeholder="Send me an Email!" name="" id=""></textarea>
+                    <div className="w-full text-center">
+
+                        <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                            Send
                     </button>
+                    </div>
                 </div>
             </div>
         </section>
