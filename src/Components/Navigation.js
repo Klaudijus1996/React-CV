@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useTransition, animated } from 'react-spring';
-import NavigationMenu from './NavigationMenu';
+import { Link, animateScroll as scroll } from "react-scroll";
 // import Home from './Home';
 
 
@@ -24,18 +23,45 @@ const Navigation = () => {
     // mask className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
 
     return (
-        <nav>
+        <nav className="mr-64">
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div className="text-sm lg:flex-grow">
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">
-                        Home
-      </a>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">
+                    <Link
+                        className="block focus:underline mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >About</Link>
+                    <Link
+                        className="block focus:underline mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
+                        activeClass="active"
+                        to="skills"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >Skills</Link>
+                    <Link
+                        className="block focus:underline mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >Contact</Link>
+                    {/* <a href="#about" className="block focus:underline mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">
                         About
       </a>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">
-                        Contact
+                    <a href="#skills" className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">
+                        Skills
       </a>
+                    <a href="#contact" className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">
+                        Contact
+      </a> */}
                 </div>
             </div>
         </nav>

@@ -1,16 +1,26 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGit, faGitAlt, faGithub, faGithubAlt, faGithubSquare, faGitSquare } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-scroll';
 
 
 const Footer = () => {
     return (
         <footer className="bg-gray-800 hover:bg-gray-900 text-gray-100 p-8 w-full min-h-32">
             <div className="relative">
-                <a style={{ left: "50%", bottom: "16px", transform: "translate(-50%)" }} className="text-3xl text-red-400 hover:text-red-500 absolute" href="#top">
+                <Link
+                    style={{ left: "50%", bottom: "16px", transform: "translate(-50%)" }}
+                    className="text-3xl text-red-400 hover:text-red-500 absolute"
+                    activeClass="active"
+                    to="top"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
                     <FontAwesomeIcon icon={faArrowAltCircleUp} />
-                </a>
+                </Link>
             </div>
             <div className="flex mr-auto ml-auto w-2/5">
 

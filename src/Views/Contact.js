@@ -1,10 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faEnvelope, faMapMarked, faMapMarkedAlt, faMapMarker, faMapMarkerAlt, faMobile, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faEnvelope, faMapMarkerAlt, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
     return (
-        <section className="bg-blue-100 p-5 pb-32">
+        <section id="contact" className="bg-blue-100 p-5 pb-32">
             <h1 style={{ fontFamily: "'Righteous', cursive" }} className="text-5xl text-center p-5">Contact</h1>
             <div className="container flex justify-between p-10">
                 <div className="w-2/5 bg-white bg-opacity-50">

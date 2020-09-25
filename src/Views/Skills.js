@@ -1,10 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCss3, faHtml5, faJava, faJs, faLinkedin, faPhp } from '@fortawesome/free-brands-svg-icons';
+import { faCss3, faHtml5, faJava, faJs, faPhp } from '@fortawesome/free-brands-svg-icons';
 
 const Skills = () => {
     return (
-        <section className="bg-gray-100 p-5">
+        <section id="skills" className="bg-gray-100 p-5">
             <h1 style={{ fontFamily: "'Righteous', cursive" }} className="text-5xl text-center p-5">Skills</h1>
             <div className="container flex flex-wrap justify-between">
                 <div className="w-1/4 shadow-xl p-2 text-center m-2 my-4 hover:bg-gray-100 bg-white border-l border-b border-r">

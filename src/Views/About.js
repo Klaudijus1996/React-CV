@@ -4,7 +4,7 @@ import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-i
 
 const About = () => {
     return (
-        <section className="bg-blue-100 p-5">
+        <section id="about" className="bg-blue-100 p-5">
             <h1 style={{ fontFamily: "'Righteous', cursive" }} className="text-5xl text-center p-5">About me</h1>
             <div className="container bg-gray-200 flex flex-wrap p-5 border">
                 <div className="w-2/5 p-5">

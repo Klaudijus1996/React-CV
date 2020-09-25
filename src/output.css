@@ -11,6 +11,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;500&display=swap');
 
+.navfill {
+  background-color: red;
+}
+.navfill.active {
+  background-color: gray;
+}
+
 .location {
   font-size: 3rem;
   background: linear-gradient(#F56565, #53BC62);
