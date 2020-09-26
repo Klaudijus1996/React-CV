@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useTransition, animated } from 'react-spring';
+import { useTransition } from 'react-spring';
 import { Link, animateScroll as scroll } from "react-scroll";
-// import Home from './Home';
 
 
 
@@ -27,6 +25,7 @@ const Navigation = () => {
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div className="text-sm lg:flex-grow">
                     <Link
+                        style={{ cursor: "pointer" }}
                         className="block focus:underline mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
                         activeClass="active"
                         to="about"
@@ -36,6 +35,7 @@ const Navigation = () => {
                         duration={500}
                     >About</Link>
                     <Link
+                        style={{ cursor: "pointer" }}
                         className="block focus:underline mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
                         activeClass="active"
                         to="skills"
@@ -45,6 +45,7 @@ const Navigation = () => {
                         duration={500}
                     >Skills</Link>
                     <Link
+                        style={{ cursor: "pointer" }}
                         className="block focus:underline mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
                         activeClass="active"
                         to="contact"

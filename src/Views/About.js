@@ -32,7 +32,7 @@ const About = () => {
                         </a>
                     </p>
                     <br />
-                    <a className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" href={require("../Components/Files/Resume-Klaudijus.pdf")} download="Resume-Klaudijus">Download CV</a>
+                    <a style={{ transition: "0.3s" }} className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" href={require("../Components/Files/Resume-Klaudijus.pdf")} download="Resume-Klaudijus">Download CV</a>
                 </div>
             </div>
         </section>

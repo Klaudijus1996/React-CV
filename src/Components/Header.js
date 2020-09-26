@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import Navigation from './Navigation';
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 const Header = () => {
     const [navbar, setNavbar] = useState(false);
-    let header;
     const changeBackground = () => {
         if (window.scrollY >= 780) {
             setNavbar(true);
@@ -13,11 +14,18 @@ const Header = () => {
     }
     window.addEventListener('scroll', changeBackground);
     return (
-        <header className={navbar ? 'p-3 w-full fixed bg-gray-800 text-gray-100' : 'p-3 w-full fixed'}>
+        <header style={{ transition: "1s" }} className={navbar ? 'p-3 w-full fixed bg-gray-800 text-gray-100 z-10' : 'p-3 w-full fixed z-10'}>
             <div className="flex justify-between items-center">
-                <span className="font-bold text-gray-200 ml-64">
-                    AppName
-            </span>
+                <Link
+                    style={{ cursor: "pointer" }}
+                    className="font-bold text-gray-200 ml-64"
+                    activeClass="active"
+                    to="top"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >KlaudijusCV</Link>
                 <Navigation
                     style={{
                         maxWidth: '1100px'

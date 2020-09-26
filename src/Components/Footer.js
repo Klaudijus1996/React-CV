@@ -5,9 +5,10 @@ import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll';
 
 
+
 const Footer = () => {
     return (
-        <footer className="bg-gray-800 hover:bg-gray-900 text-gray-100 p-8 w-full min-h-32">
+        <footer style={{ transition: "0.3s" }} className="bg-gray-800 hover:bg-gray-900 text-gray-100 p-8 w-full min-h-32">
             <div className="relative">
                 <Link
                     style={{ left: "50%", bottom: "16px", transform: "translate(-50%)" }}
