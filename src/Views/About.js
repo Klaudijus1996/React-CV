@@ -21,13 +21,13 @@ const About = () => {
                     you have to invest a huge amount of time. Thankfully I enjoy working hard and reaching that goal and getting my hands on that <b>loot</b>.
                     </p>
                     <p className="p-2 text-center">
-                        <a className="text-blue-400 hover:text-blue-500 p-1" href="https://www.linkedin.com/in/klaudijus-kamarauskas-b669831a6/">
+                        <a className="text-blue-400 hover:text-blue-500 p-1" target="_blank" href="https://www.linkedin.com/in/klaudijus-kamarauskas-b669831a6/">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
-                        <a className="text-blue-400 hover:text-blue-500 p-1" href="https://www.facebook.com/claud.hatake">
+                        <a className="text-blue-400 hover:text-blue-500 p-1" target="_blank" href="https://www.facebook.com/claud.hatake">
                             <FontAwesomeIcon icon={faFacebook} />
                         </a>
-                        <a className="text-blue-400 hover:text-blue-500 p-2" href="https://github.com/Klaudijus1996?tab=repositories">
+                        <a className="text-blue-400 hover:text-blue-500 p-2" target="_blank" href="https://github.com/Klaudijus1996?tab=repositories">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </p>

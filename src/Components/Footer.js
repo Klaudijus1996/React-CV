@@ -28,7 +28,7 @@ const Footer = () => {
                 <p className="w-2/4 px-10 py-5 text-right border-r">
                     Author: <b>Klaudijus Kamarauskas</b><br />
                 Project made with: <b>ReactJs</b><br />
-                Source code: <a className="transition duration-500 ease-in-out text-purple-300 hover:text-purple-500" href="https://github.com/Klaudijus1996/React-CV"><FontAwesomeIcon icon={faGithubSquare} /></a>
+                Source code: <a className="transition duration-500 ease-in-out text-purple-300 hover:text-purple-500" target="_blank" href="https://github.com/Klaudijus1996/React-CV"><FontAwesomeIcon icon={faGithubSquare} /></a>
                 </p>
                 <p className="w-2/4 px-10 py-5 text-left border-l">
                     This page is currently static. Will be attempting to make it into a cms soon

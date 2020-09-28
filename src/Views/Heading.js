@@ -354,7 +354,7 @@ const Heading = () => {
             </div>
             <div style={{ right: "1%", bottom: "15%", transition: "0.3s" }} className="absolute  opacity-50 flex items-center">
                 <p className="text-white cursor-default" >Photo artist:&nbsp;</p>
-                <a className="text-2xl text-purple-500 hover:text-gray-100" href="https://www.instagram.com/ram1ntacho/"><FontAwesomeIcon icon={faInstagram} /></a>
+                <a className="text-2xl text-purple-500 hover:text-gray-100" target="_blank" href="https://www.instagram.com/ram1ntacho/"><FontAwesomeIcon icon={faInstagram} /></a>
             </div>
         </div>
     )
