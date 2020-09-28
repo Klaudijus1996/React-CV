@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Background from '../Components/Images/raminta_cho.jpg'
 import Particles from "react-tsparticles";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -12,7 +14,7 @@ const Heading = () => {
             marginTop: "auto",
             marginBottom: "auto",
             backgroundImage: `url(${Background})`
-        }} className="w-full">
+        }} className="w-full bg-cover bg-center">
             <Particles
                 className="absolute w-full"
                 height="800px"
@@ -349,6 +351,10 @@ const Heading = () => {
                         </span>
                     </h1>
                 </div>
+            </div>
+            <div style={{ right: "1%", bottom: "15%", transition: "0.3s" }} className="absolute  opacity-50 flex items-center">
+                <p className="text-white cursor-default" >Photo artist:&nbsp;</p>
+                <a className="text-2xl text-purple-500 hover:text-gray-100" href="https://www.instagram.com/ram1ntacho/"><FontAwesomeIcon icon={faInstagram} /></a>
             </div>
         </div>
     )
