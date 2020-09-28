@@ -11,6 +11,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;500&display=swap');
 
+.animate-from-left {
+  animation: nav-load 1500ms ease-in;
+}
+.animate-scale {
+  animation: nav-load-scale 1500ms ease-in;
+}
+.anim-delay-500 {
+  animation-delay: 500ms;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0%;
+  }
+  90% {
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+@keyframes nav-load-scale {
+  0% {
+    transform: scale(0);
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+
 .navfill {
   background-color: red;
 }

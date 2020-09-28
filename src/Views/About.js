@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
+    const [showElements, setShowElements] = useState(false);
+    const showSection = () => {
+        if (window.scrollY >= 100) {
+            setShowElements(true)
+        };
+    }
+    window.addEventListener('scroll', showSection);
     return (
         <section id="about" className="bg-blue-100 p-5">
             <h1 style={{ fontFamily: "'Righteous', cursive" }} className="text-5xl text-center p-5">About me</h1>
             <div className="container bg-gray-200 flex flex-wrap p-5 border">
-                <div className="w-2/5 p-5">
+                <div className={showElements ? "animate-scale w-2/5 p-5" : "hidden w-2/5 p-5"}>
                     <img className="border-r p-4" src={require('../Components/Images/me.jpg')} alt="Me" />
                 </div>
-                <div className="w-2/5 p-5 text-center">
+                <div className={showElements ? "animate-from-left w-2/5 p-5 text-center" : "hidden w-2/5 p-5 text-center"}>
                     <h2 style={{ fontFamily: "'Frank Ruhl Libre', serif" }} className="text-2xl text-left p-2">Junior Web-Developer</h2>
                     <p style={{ fontFamily: "'EB Garamond', serif" }} className="p-2 border-b text-justify text-lg">
                         My name is Klaudijus Kamarauskas and I'm a junior web-developer.

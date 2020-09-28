@@ -10,13 +10,13 @@ const Heading = () => {
     return (
 
         <div id="top" style={{
-            height: "800px",
+            height: "100vh",
             marginTop: "auto",
             marginBottom: "auto",
             backgroundImage: `url(${Background})`
         }} className="w-full bg-cover bg-center">
             <Particles
-                className="absolute w-full"
+                className="absolute w-full animate-scale"
                 height="800px"
                 id="tsparticles"
                 options={{
@@ -342,7 +342,7 @@ const Heading = () => {
                         fontFamily: "'Righteous', cursive"
                     }}
                 >Hello</h1>
-                <div style={{ fontFamily: "'Frank Ruhl Libre', serif" }} className="cd-intro w-full text-white">
+                <div style={{ fontFamily: "'Frank Ruhl Libre', serif" }} className="animate-from-left cd-intro w-full text-white">
                     <h1 style={{ fontSize: "52px" }} className="text-center cd-headline clip">
                         <span className="blc">I am &nbsp;</span>
                         <span className="cd-words-wrapper">
@@ -352,7 +352,7 @@ const Heading = () => {
                     </h1>
                 </div>
             </div>
-            <div style={{ right: "1%", bottom: "15%", transition: "0.3s" }} className="absolute  opacity-50 flex items-center">
+            <div style={{ right: "1%", bottom: "0%", transition: "0.3s" }} className="absolute  opacity-50 flex items-center">
                 <p className="text-white cursor-default" >Photo artist:&nbsp;</p>
                 <a className="text-2xl text-purple-500 hover:text-gray-100" target="_blank" href="https://www.instagram.com/ram1ntacho/"><FontAwesomeIcon icon={faInstagram} /></a>
             </div>
