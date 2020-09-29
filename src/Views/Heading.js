@@ -1,22 +1,22 @@
 import React, { useState } from 'react'
-import Background from '../Components/Images/raminta_cho.jpg'
 import Particles from "react-tsparticles";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { useSpring, animated, useTransition } from 'react-spring'
+
 
 
 
 const Heading = () => {
+    const [transitionDone, setTransitionDone] = useState(false);
+    setTimeout(function () { setTransitionDone(true); }, 1700);
+    const showBG = useSpring({ config: { duration: 1500 }, delay: 200, opacity: 1, from: { opacity: 0 } })
+    const showGreetingMain = useSpring({ config: { duration: 1000 }, delay: 800, opacity: 1, from: { opacity: 0 } })
+    const showGreetingSub = useSpring({ config: { duration: 1500 }, delay: 1700, opacity: 1, from: { opacity: 0 } })
     return (
-
-        <div id="top" style={{
-            height: "100vh",
-            marginTop: "auto",
-            marginBottom: "auto",
-            backgroundImage: `url(${Background})`
-        }} className="w-full bg-cover bg-center">
+        <animated.div style={showBG} id="top" className="w-full ram-bg bg-cover bg-center">
             <Particles
-                className="absolute w-full animate-scale"
+                className="absolute w-full"
                 height="800px"
                 id="tsparticles"
                 options={{
@@ -335,28 +335,30 @@ const Heading = () => {
                 }}
             />
             <div className="z-10 flex content-center flex-wrap w-full bg-gray-800 bg-opacity-25 min-h-full">
-                <h1
-                    className="text-6xl text-white w-full text-center"
-                    style={{
-                        height: 'fit-content',
-                        fontFamily: "'Righteous', cursive"
-                    }}
-                >Hello</h1>
-                <div style={{ fontFamily: "'Frank Ruhl Libre', serif" }} className="animate-from-left cd-intro w-full text-white">
-                    <h1 style={{ fontSize: "52px" }} className="text-center cd-headline clip">
+                <div className="w-full" style={{
+                    height: 'fit-content',
+                    fontFamily: "'Righteous', cursive"
+                }}>
+                    <animated.h1
+                        className="text-6xl text-white w-full text-center"
+                        style={showGreetingMain}
+                    >Hello</animated.h1>
+                </div>
+                <div style={{ fontFamily: "'Frank Ruhl Libre', serif" }} className={transitionDone ? "cd-intro w-full text-white" : "hidden"}>
+                    <animated.h1 style={showGreetingSub} className="text-5xl text-center cd-headline clip">
                         <span className="blc">I am &nbsp;</span>
                         <span className="cd-words-wrapper">
                             <b className="is-visible">Klaudijus Kamarauskas</b>
                             <b>Developer</b>
                         </span>
-                    </h1>
+                    </animated.h1>
                 </div>
             </div>
             <div style={{ right: "1%", bottom: "0%", transition: "0.3s" }} className="absolute  opacity-50 flex items-center">
                 <p className="text-white cursor-default" >Photo artist:&nbsp;</p>
                 <a className="text-2xl text-purple-500 hover:text-gray-100" target="_blank" href="https://www.instagram.com/ram1ntacho/"><FontAwesomeIcon icon={faInstagram} /></a>
             </div>
-        </div>
+        </animated.div>
     )
 }
 

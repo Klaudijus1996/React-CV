@@ -14,11 +14,15 @@ const Header = () => {
     }
     window.addEventListener('scroll', changeBackground);
     return (
-        <header style={{ transition: "1s" }} className={navbar ? 'p-3 w-full fixed bg-gray-800 text-gray-100 z-10' : 'p-3 w-full fixed z-10'}>
+        <header style={{ transition: "1s" }}
+            className={
+                navbar ? 'p-3 w-full fixed bg-gray-800 text-gray-100 z-10' : 'p-3 w-full fixed z-10'
+            }
+        >
             <div className="flex justify-between items-center">
                 <Link
                     style={{ cursor: "pointer" }}
-                    className="font-bold text-gray-200 ml-64"
+                    className="ml-64 font-bold text-gray-200"
                     activeClass="active"
                     to="top"
                     spy={true}
