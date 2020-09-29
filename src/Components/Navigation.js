@@ -1,44 +1,29 @@
 import React, { useState } from 'react'
-import { Link, animateScroll as scroll } from "react-scroll";
+import NavLinks from './NavLinks.js';
+import ResponsiveNav from './ResponsiveNav.js';
+
 
 
 
 
 const Navigation = () => {
+    const [hiddenNav, setHiddenNav] = useState(false);
+    const hideNav = () => {
+        if (window.innerWidth > 768) {
+            setHiddenNav(true);
+        } else {
+            setHiddenNav(false);
+        }
+    }
+    window.addEventListener('resize', hideNav);
     return (
-        <nav className="mr-64">
+        <nav className="lg:mr-64">
             <div className="w-full flex flex-wrap">
-                <div className="text-sm flex flex-wrap">
-                    <Link
-                        style={{ cursor: "pointer" }}
-                        className="block focus:underline mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
-                        activeClass="active"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >About</Link>
-                    <Link
-                        style={{ cursor: "pointer" }}
-                        className="block focus:underline mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
-                        activeClass="active"
-                        to="skills"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >Skills</Link>
-                    <Link
-                        style={{ cursor: "pointer" }}
-                        className="block focus:underline mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
-                        activeClass="active"
-                        to="contact"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >Contact</Link>
+                <div className="md:hidden">
+                    <ResponsiveNav />
+                </div>
+                <div className={hiddenNav ? "md:text-sm md:flex md:flex-wrap" : "hidden"}>
+                    <NavLinks />
                 </div>
             </div>
         </nav>

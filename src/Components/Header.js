@@ -22,7 +22,7 @@ const Header = () => {
             <div className="flex justify-between items-center">
                 <Link
                     style={{ cursor: "pointer" }}
-                    className="ml-64 font-bold text-gray-200"
+                    className="lg:ml-64 font-bold text-gray-200"
                     activeClass="active"
                     to="top"
                     spy={true}
