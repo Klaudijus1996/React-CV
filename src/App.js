@@ -5,9 +5,9 @@ import Heading from './Views/Heading';
 import Skills from './Views/Skills';
 import About from './Views/About';
 import Contact from './Views/Contact';
-import './styles/app.css';
-import './styles/custom.css';
 import './styles/heading.css';
+import './styles/custom.css';
+import './styles/app.css';
 
 
 function App() {

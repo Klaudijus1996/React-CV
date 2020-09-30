@@ -1088,8 +1088,6 @@ img {
   }
 }
 
-@import "./heading.css";
-
 @media (min-width: 640px) {
 
   .sm\:flex {
