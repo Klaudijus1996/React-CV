@@ -26,14 +26,14 @@ const About = () => {
     window.addEventListener('scroll', showSection);
     return (
         <section id="about" className="bg-blue-100 p-5">
-            <h1 style={{ fontFamily: "'Righteous', cursive" }} className="text-5xl text-center p-5">About me</h1>
+            <h1 style={{ fontFamily: "'Righteous', cursive" }} className="text-4xl md:text-5xl text-center p-5">About me</h1>
             <div className="container mx-auto bg-gray-200 flex flex-wrap p-5 border">
                 {
                     pictureTransition.map(({ item, key, props }) =>
                         item && <animated.div
                             key={key}
                             style={props}
-                            className={showElements ? "w-2/5 p-5 border-r" : "hidden w-2/5 p-5"}
+                            className={showElements ? "md:w-2/5 p-5 md:border-r  ml-auto" : "hidden"}
                         >
                             <img src={require('../Components/Images/me.jpg')} alt="Me" />
                         </animated.div>)
@@ -44,8 +44,8 @@ const About = () => {
                         <animated.div
                             key={key}
                             style={props}
-                            className={showElements ? "w-2/5 p-5 text-center" : "hidden w-2/5 p-5 text-center"}>
-                            <h2 style={{ fontFamily: "'Frank Ruhl Libre', serif" }} className="text-2xl text-left p-2">Junior Web-Developer</h2>
+                            className={showElements ? "md:w-2/5 p-5 text-center mr-auto" : "hidden"}>
+                            <h2 style={{ fontFamily: "'Frank Ruhl Libre', serif" }} className="text-2xl border-t md:border-none text-left p-2">Junior Web-Developer</h2>
                             <p style={{ fontFamily: "'EB Garamond', serif" }} className="p-2 border-b text-justify text-lg">
                                 My name is Klaudijus Kamarauskas and I'm a junior web-developer.
                     In 2020 I studied full-stack web-developing at <a className="text-blue-500 hover:underline" href="https://bit.lt/">Baltic Institute of Technology</a> for 5.5 months.
