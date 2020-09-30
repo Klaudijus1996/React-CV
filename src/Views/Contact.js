@@ -36,7 +36,7 @@ const Contact = () => {
                 <div className={showElements ? "w-4/5 lg:w-2/5 h-64 lg:h-auto shadow-lg mx-auto lg:mx-0 mt-10 lg:mt-0" : "hidden"}>
                     <textarea style={{ resize: "none" }} className="w-full h-64 lg:h-full hover:bg-gray-100 border focus:outline-none p-2" placeholder="Send me an Email!" name="" id=""></textarea>
                     <div className="w-full text-center">
-                        <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                        <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                             Send
                         </button>
                     </div>

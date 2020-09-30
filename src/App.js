@@ -7,6 +7,7 @@ import About from './Views/About';
 import Contact from './Views/Contact';
 import './styles/app.css';
 import './styles/custom.css';
+import './styles/heading.css';
 
 
 function App() {
