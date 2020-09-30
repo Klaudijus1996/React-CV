@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 
 const Footer = () => {
     return (
-        <footer style={{ transition: "0.3s" }} className="bg-gray-800 hover:bg-gray-900 text-gray-100 p-8 w-full min-h-32">
+        <footer style={{ transition: "0.3s" }} className="bg-gray-800 hover:bg-gray-900 text-gray-100 p-8 w-full max-h-32">
             <div className="relative">
                 <Link
                     style={{ left: "50%", bottom: "16px", transform: "translate(-50%)" }}
@@ -23,7 +23,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faArrowAltCircleUp} />
                 </Link>
             </div>
-            <div className="flex mr-auto ml-auto w-2/5">
+            <div className="flex mx-auto sm:w-2/3 lg:w-3/5">
 
                 <p className="w-2/4 px-10 py-5 text-right border-r">
                     Author: <b>Klaudijus Kamarauskas</b><br />
