@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import NavLinks from './NavLinks.js';
 import ResponsiveNav from './ResponsiveNav.js';
 
@@ -22,7 +22,7 @@ const Navigation = () => {
                 <div className="md:hidden">
                     <ResponsiveNav />
                 </div>
-                <div className={hiddenNav ? "md:text-sm md:flex md:flex-wrap" : "hidden"}>
+                <div className={hiddenNav ? "md:text-sm md:flex md:flex-wrap" : "hidden md:contents"}>
                     <NavLinks />
                 </div>
             </div>
