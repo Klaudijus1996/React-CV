@@ -7,7 +7,7 @@ const NavLinks = (props) => {
         <>
             <Link
                 style={{ cursor: "pointer" }}
-                className="block py-3 border-t border-b mt-4 text-gray-700 hover:text-gray-900 mr-4"
+                className={"block py-3 border-t border-b md:border-none md:mt-0 mt-4 text-gray-700 hover:text-gray-900 md:text-white md:hover:text-gray-200 mr-4"}
                 activeClass="active"
                 to="top"
                 spy={true}
@@ -17,7 +17,7 @@ const NavLinks = (props) => {
             >Top</Link>
             <Link
                 style={{ cursor: "pointer" }}
-                className="block py-3 border-b mt-4 text-gray-700 hover:text-gray-900 mr-4"
+                className="block py-3 border-b mt-4 md:border-none md:mt-0 text-gray-700 hover:text-gray-900 md:text-white md:hover:text-gray-200 mr-4"
                 activeClass="active"
                 to="about"
                 spy={true}
@@ -28,7 +28,7 @@ const NavLinks = (props) => {
             >About</Link>
             <Link
                 style={{ cursor: "pointer" }}
-                className="block py-3 border-b mt-4 text-gray-700 hover:text-gray-900 mr-4"
+                className="block py-3 border-b mt-4 md:border-none md:mt-0 text-gray-700 hover:text-gray-900 md:text-white md:hover:text-gray-200 mr-4"
                 activeClass="active"
                 to="skills"
                 spy={true}
@@ -39,7 +39,7 @@ const NavLinks = (props) => {
             >Skills</Link>
             <Link
                 style={{ cursor: "pointer" }}
-                className="block py-3 border-b mt-4 text-gray-700 hover:text-gray-900 mr-4"
+                className="block py-3 border-b mt-4 md:border-none md:mt-0 text-gray-700 hover:text-gray-900 md:text-white md:hover:text-gray-200 mr-4"
                 activeClass="active"
                 to="contact"
                 spy={true}
