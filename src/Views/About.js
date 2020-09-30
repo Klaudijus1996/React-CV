@@ -33,7 +33,7 @@ const About = () => {
                         item && <animated.div
                             key={key}
                             style={props}
-                            className={showElements ? "md:w-2/5 p-5 md:border-r  ml-auto" : "hidden"}
+                            className={showElements ? "lg:w-2/5 p-5 md:border-r  ml-auto" : "hidden"}
                         >
                             <img src={require('../Components/Images/me.jpg')} alt="Me" />
                         </animated.div>)
@@ -44,7 +44,7 @@ const About = () => {
                         <animated.div
                             key={key}
                             style={props}
-                            className={showElements ? "md:w-2/5 p-5 text-center mr-auto" : "hidden"}>
+                            className={showElements ? "lg:w-2/5 p-5 text-center mr-auto" : "hidden"}>
                             <h2 style={{ fontFamily: "'Frank Ruhl Libre', serif" }} className="text-2xl border-t md:border-none text-left p-2">Junior Web-Developer</h2>
                             <p style={{ fontFamily: "'EB Garamond', serif" }} className="p-2 border-b text-justify text-lg">
                                 My name is Klaudijus Kamarauskas and I'm a junior web-developer.
