@@ -46,7 +46,7 @@ const About = () => {
                             style={props}
                             className={showElements ? "lg:w-2/5 p-5 text-center mr-auto" : "hidden"}>
                             <h2 style={{ fontFamily: "'Frank Ruhl Libre', serif" }} className="text-2xl border-t md:border-none text-left p-2">Junior Web-Developer</h2>
-                            <p style={{ fontFamily: "'EB Garamond', serif" }} className="p-2 border-b text-justify text-lg">
+                            <p style={{ fontFamily: "'EB Garamond', serif" }} className="p-2 border-b text-justify sm:text-base md:text-lg">
                                 My name is Klaudijus Kamarauskas and I'm a junior web-developer.
                     In 2020 I studied full-stack web-developing at <a className="text-blue-500 hover:underline" href="https://bit.lt/">Baltic Institute of Technology</a> for 5.5 months.
                     Over the course I've gained basic knowledge of few languages and advanced knowledge in <b>php</b>.<br />

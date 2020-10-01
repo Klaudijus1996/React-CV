@@ -31,7 +31,7 @@ const Skills = () => {
                                 " w-2/4 sm:w-2/5 lg:w-1/4 mx-auto my-3 transition duration-500 shadow-xl p-2 text-center md:mx-2 sm:my-4 hover:bg-orange-100 bg-white border-l border-b border-r"
                                 : "hidden"}>
                             <h4 className="text-orange-500 text-5xl hover:text-orange-600 h-16 w-16 mr-auto ml-auto"><FontAwesomeIcon icon={faHtml5} /></h4>
-                            <ul style={{ fontFamily: "'EB Garamond', serif" }} className="text-lg p-4">
+                            <ul style={{ fontFamily: "'EB Garamond', serif" }} className="text-sm sm:text-base md:text-lg p-4">
                                 <li>Knowledge: basics</li>
                                 <li>Experience: 5 months</li>
                             </ul>
@@ -47,7 +47,7 @@ const Skills = () => {
                             style={props}
                             className={showElements ? " w-2/4 sm:w-2/5 lg:w-1/4 mx-auto my-3 transition duration-500 shadow-xl p-2 text-center md:mx-2 sm:my-4 hover:bg-orange-100 bg-white border-l border-b border-r" : "hidden"}>
                             <h4 className="text-blue-500 text-5xl hover:text-blue-700 h-16 w-16 mr-auto ml-auto"><FontAwesomeIcon icon={faCss3} /></h4>
-                            <ul style={{ fontFamily: "'EB Garamond', serif" }} className="text-lg p-4">
+                            <ul style={{ fontFamily: "'EB Garamond', serif" }} className="text-sm sm:text-base md:text-lg p-4">
                                 <li>Knowledge: basics</li>
                                 <li>Experience: 5 months</li>
                                 <li>Additional: experience with Bootsrap, Tailwindcss</li>
@@ -63,7 +63,7 @@ const Skills = () => {
                             style={props}
                             className={showElements ? " w-2/4 sm:w-2/5 lg:w-1/4 mx-auto my-3 transition duration-500 shadow-xl p-2 text-center md:mx-2 sm:my-4 hover:bg-orange-100 bg-white border-l border-b border-r" : "hidden"}>
                             <h4 className="text-yellow-400 text-5xl hover:text-yellow-500 w-16 h-16 mr-auto ml-auto"><FontAwesomeIcon icon={faJs} /></h4>
-                            <ul style={{ fontFamily: "'EB Garamond', serif" }} className="text-lg p-4">
+                            <ul style={{ fontFamily: "'EB Garamond', serif" }} className="text-sm sm:text-base md:text-lg p-4">
                                 <li>Knowledge: basics</li>
                                 <li>Experience: 1 month</li>
                                 <li>Additional: experience with ReactJS <span className="text-2xl leading-3 text-blue-500"><FontAwesomeIcon icon={faReact} /></span></li>
@@ -79,7 +79,7 @@ const Skills = () => {
                             style={props}
                             className={showElements ? " w-2/4 sm:w-2/5 lg:w-1/4 mx-auto my-3 transition duration-500 shadow-xl p-2 text-center md:mx-2 sm:my-4 hover:bg-orange-100 bg-white border-l border-b border-r" : "hidden"}>
                             <h4 className="text-red-500 mr-auto ml-auto rounded-full w-16 h-16 leading-3 bg-gray-300 text-5xl hover:bg-gray-400 hover:text-red-700"><FontAwesomeIcon icon={faJava} /></h4>
-                            <ul style={{ fontFamily: "'EB Garamond', serif" }} className="text-lg p-4">
+                            <ul style={{ fontFamily: "'EB Garamond', serif" }} className="text-sm sm:text-base md:text-lg p-4">
                                 <li>Knowledge: basics</li>
                                 <li>Experience: 1 month</li>
                                 <li>Additional: basic OOP konwledge</li>
@@ -95,7 +95,7 @@ const Skills = () => {
                             style={props}
                             className={showElements ? " w-2/4 sm:w-2/5 lg:w-1/4 mx-auto my-3 transition duration-500 shadow-xl p-2 text-center lg:mx-2 sm:my-4 hover:bg-orange-100 bg-white border-l border-b border-r" : "hidden"}>
                             <h4 className="text-purple-500 text-5xl hover:text-purple-600 h-16 w-16 mr-auto ml-auto"><FontAwesomeIcon icon={faPhp} /></h4>
-                            <ul style={{ fontFamily: "'EB Garamond', serif" }} className="text-lg p-4">
+                            <ul style={{ fontFamily: "'EB Garamond', serif" }} className="text-sm sm:text-base md:text-lg p-4">
                                 <li>Knowledge: advanced</li>
                                 <li>Experience: 3 months</li>
                                 <li>Additional: experience with Laravel <span className="text-2xl text-red-500"><FontAwesomeIcon icon={faLaravel} /></span>, MySql</li>
