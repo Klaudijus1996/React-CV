@@ -24,15 +24,14 @@ const Footer = () => {
                 </Link>
             </div>
             <div className="flex mx-auto sm:w-2/3 lg:w-3/5">
-
-                <p className="w-2/4 px-10 py-5 text-right border-r">
+                <p className="w-2/4 py-1 px-3 sm:px-10 sm:py-5 text-justify sm:text-right border-r">
                     Author: <b>Klaudijus Kamarauskas</b><br />
                 Project made with: <b>ReactJs</b><br />
                 Source code: <a className="transition duration-500 ease-in-out text-purple-300 hover:text-purple-500" target="_blank" href="https://github.com/Klaudijus1996/React-CV"><FontAwesomeIcon icon={faGithubSquare} /></a>
                 </p>
-                <p className="w-2/4 px-10 py-5 text-left border-l">
-                    This page is currently static. Will be attempting to make it into a cms soon
-                    &copy; Copyright 2020
+                <p className="w-2/4 sm:px-10 py-1 px-3 sm:py-5 text-justify sm:text-left border-l">
+                    This page is currently static. Will be attempting to make it into a cms soon<br />
+                    &copy;Copyright 2020
                 </p>
             </div>
         </footer>
