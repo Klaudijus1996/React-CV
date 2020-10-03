@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 
 function Email() {
+    const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
@@ -31,12 +32,12 @@ function Email() {
             errors.subjectLength = "Error: subject must contain less than 10 characters!";
             isValid = false;
         }
-        if (subject.trim().length < 1 || name.trim().length < 1 || message.length < 1) {
+        if (subject.trim().length < 1 || name.trim().length < 1 || message.length < 1 || email.length < 1) {
             errors.emptyString = "Error: All fields are required!";
             isValid = false;
         }
-        if (subject.match(/delete/ig) || name.match(/delete/ig) || message.match(/delete/ig)) {
-            errors.deleteFalse = "ERROR: forbidden input...";
+        if (subject.match(/delete/ig) || name.match(/delete/ig) || message.match(/delete/ig) || email.match(/delete/ig)) {
+            errors.deleteFalse = "Error: forbidden input...";
         }
         if (name.trim().length > 12) {
             errors.nameLength = "Error: name field must be less than 12 characters!";
@@ -44,6 +45,14 @@ function Email() {
         }
         if (name.match(/[+=_\-)(*&^%$#@!/?.>,<'";:[{\]}\\|0-9]/ig)) {
             errors.containsSymbols = "Error: name must contain only alphabetic characters!";
+            isValid = false;
+        }
+        if (email.length < 6) {
+            errors.shortEmail = "Error: email must contain atleast 6 characters";
+            isValid = false;
+        }
+        if (!email.match(/[@.]/ig)) {
+            errors.invalidEmail = "Error: missing required symbols for email!";
             isValid = false;
         }
         if (isValid) {
@@ -64,6 +73,16 @@ function Email() {
             }
 
             <form onSubmit={submitForm} className="w-full h-full">
+                <div className="w-full border mb-2">
+                    <input
+                        className="px-4 py-2 w-full focus:outline-none"
+                        value={email}
+                        onChange={(e) => { setEmail(e.target.value) }}
+                        autoComplete="off"
+                        type="email"
+                        placeholder="*Your Email"
+                        name="email" />
+                </div>
                 <div className="w-full border mb-2">
                     <input
                         className="px-4 py-2 w-full focus:outline-none"
@@ -89,7 +108,7 @@ function Email() {
                         style={{ resize: "none" }}
                         value={message}
                         onChange={(e) => { setMessage(e.target.value) }}
-                        className="px-4 py-2 w-full h-56 border hover:bg-gray-100 border focus:outline-none"
+                        className="px-4 py-2 w-full h-48 border hover:bg-gray-100 border focus:outline-none"
                         placeholder="Send me an Email!"
                         name="message"
                         id="" />

@@ -14,6 +14,7 @@ const NavLinks = (props) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                onClick={props.closeMenu}
             >Top</Link>
             <Link
                 style={{ cursor: "pointer" }}
